@@ -1,0 +1,1 @@
+define(function(){function a(a){for(var d,e={};d=c.exec(a);)e[d[1]]=b(d[2]||d[3]);return e}function b(a){return d.test(a)?a=a.replace(d,"$1").split(","):"null"===a?a=null:"false"===a?a=!1:"true"===a?a=!0:""===a||"''"===a||'""'===a?a="":isNaN(a)||(a=+a),a}var c=/([\w-]+)\s*:\s*(?:(\[[^\]]+\])|([^,]+)),?/g,d=/^\[([^\]]+)\]$/;return{parseProperties:a,typecastVal:b}});
